@@ -16,7 +16,7 @@ def home():
 def predict():
 	filename = "https://raw.githubusercontent.com/FarelN/UTS/main/UTS_preprocessing.csv"
 	df = pd.read_csv(filename)
-	df.drop(columns=['mall_name', 'name'], inplace=True)
+	df.drop(columns=['stadion_name', 'name'], inplace=True)
 
 	import string
 	import re
